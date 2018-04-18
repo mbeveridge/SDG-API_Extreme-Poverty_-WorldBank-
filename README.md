@@ -23,6 +23,8 @@ This time, I also got the `df` dataframe from Python into R (via **rpy2**), and 
 
 Unfortunately '2nd dataset' was missing a lot of values. Firstly, everything in the years 1960-1980 was 'zero' (not `NA`), and similarly for most countries in following years ...That could be because collection hadn't begun. However, secondly, where '1st dataset' had non-zero values every year (eg. for Albania), this '2nd dataset' would exactly match (say) every 4th or 5th, and have 'zero' for the others. Given that they presumably have the same source, this was odd, and distorted the modelling & visualisations I'd hoped to try. So there's just one visualisation, to illustrate this.
 
+_[PS. Explanation may come from the assumed [original source](http://iresearch.worldbank.org/PovcalNet/povOnDemand.aspx) on its "Choose countries/aggregates" page : "If the reference year is between two survey years, the poverty measurements at reference year are linear interpolation of poverty estimates at two survey years". Albania has (tickable) survey years of 1996, 2002, 2005, 2008, 2012 (which matches the spikes in the plot below). Uganda has 1989, 1992, 1996, 2000, 2002, 2005, 2009, 2010, 2012 (which matches the spikes in the plot below ...except for spike at 1999 instead of 2000). Exporting that data, Uganda has `Year` of 1989, 1992.23, 1996.2, 1999.55, 2002.36, 2005.33, 2009.4, 2012.45 ...8 years, not 9? SO where this API dataset misses out years, we can either try to interpolate values, or to exclude the zeroes (or the non-real ones, anyway) and `geom_line` ...But both have problems]_
+
 _Albania, Uganda : % of population since 1980 (trend) :_
 
 ![albania](albania.png)
