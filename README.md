@@ -1,9 +1,9 @@
 # API Highways : "Poverty Headcount Ratio at $1.90/day (2011 PPP) (% of Population)
-###### xxxx
+###### 16/4/18 - 18/4/18
 
 Following my [1st experience]("https://github.com/mbeveridge/SDG-API_Extreme-Poverty") of using [API Highways]("https://apihighways.org/data-sets"), I wanted to see whether the difficulties I had were typical (re. "whether the site would be a good source of datasets to practice on").
 
-I hadn't intended the next dataset to be 'the same' as the 1st one (but from "World Bank Group" instead of "Data Development Hub"). But it caught my eye (same page as the 1st one) and I decided it may be a useful comparison.
+I hadn't intended to use 'the same' dataset as the 1st one (but from "World Bank Group", not "Data Development Hub"). But it caught my eye (on main page of API Highways, again) and I thought it may be a useful comparison.
 
 As before, I wanted R for analysis, and Python code was on the dataset's page.
 
